@@ -1,0 +1,15 @@
+{% extends "admin/change_form.html" %}
+{% block inline_field_sets %}
+{% for inline_admin_formset in inline_admin_formsets %}
+{% include inline_admin_formset.opts.template %}
+{% endfor %}
+{% load static %}
+<fieldset class="module">
+  <h2>Data Import Excel Template</h2>
+  <br>
+  <a href="{% static "admin/data_migration/member/clinic_and_user_import.xlsx" %}">Click here to download Excel
+    template</a>
+  <br>
+  <i>Please follow the instruction in the Excel file above to create the csv file needed for data migration</i>
+</fieldset>
+{% endblock %}

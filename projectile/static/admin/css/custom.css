@@ -1,0 +1,29 @@
+#header {
+    background-color: #e9544a;
+    color: #ffffff;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #ffffff;
+}
+
+div.breadcrumbs {
+    background-color: #952d29;
+}
+
+.module caption {
+    background-color: #e9544a;
+
+}
+
+div.selector-chosen h2 {
+    background: #e9544a;
+}
+
+.module h2 {
+    background: #e9544a;
+}
+
+div#changelist-filter h2{
+        background-color: #e9544a;
+    }

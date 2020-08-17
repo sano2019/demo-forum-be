@@ -1,0 +1,3 @@
+name;country;region;external_id;level;website;info;description;user_email;user_first_name;user_last_name;street_address_1;street_address_2;street_address_3;postal_code;city
+Test Clinic name;Sweden;Stockholm;123123;level 1;www.gasg.se;this is some information about the clinic;This is the description;test_user_email@willandskill.se;test user first name;test user last name;address 1;address 2;address 3;postalcode12412421;cityyy
+Test Clinic name 2;Sweden;Stockholm;1,23E+11;level 2;www.22gasg.se;this is 2 some information about the clinic;This is the description 2;test2_user_email@willandskill.se;test user 2 first name;test user 2 last name;address 1;address 2;address 3;postalcode;cityyy
