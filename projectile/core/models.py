@@ -22,6 +22,9 @@ ERROR_TYPES = (ValidationError, core_exceptions.ValidationError)
 
 class Country(models.Model):
     title = models.CharField(max_length=128)
+
+    def __str__(self):
+        return self.title
     
 
 class User(AbstractBaseUser, PermissionsMixin, AbstractContactModel):

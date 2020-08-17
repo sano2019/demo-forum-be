@@ -11,7 +11,7 @@ from common.admin import SoftDeleteAdmin
 from common.models import SoftDeleteFilter
 
 from core.models import (
-    User,
+    User, Country
 )
 
 
@@ -75,6 +75,7 @@ class CustomUserAdmin(UserAdmin):
                 'is_superuser',
                 'groups',
                 'user_permissions',
+                'country'
             )
         else:
             perm_fields = ('is_active', 'is_staff', )
@@ -103,3 +104,7 @@ class CustomUserAdmin(UserAdmin):
             return readonly_fields
         else:
             return readonly_fields + ('is_onboarded',)
+
+@admin.register(Country)
+class CountryAdmin(admin.ModelAdmin):
+    pass
