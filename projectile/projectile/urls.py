@@ -85,6 +85,7 @@ urlpatterns = (
         url(r'^markdownx/', include('markdownx.urls')),
         url(r'^api/v1/common/', include('common.urls')),
         url(r'^api/v1/e2eutils/', include('e2eutils.api.urls')),
+        url('forum/', include('forum.urls')),
         # url(r'^api-token-refresh/', refresh_jwt_token, name='refresh_token'),
     ]
     + auth_urls
