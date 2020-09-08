@@ -1,0 +1,23 @@
+{% if error_message %}
+<p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
+<form action="{% url 'forum:createpost' post.parent_id %}" method="post">
+  {% csrf_token %} {% for choice in question.choice_set.all %}
+  <input
+    type="text"
+    name="title"
+    id="choice{{ forloop.counter }}"
+    value="{{ choice.id }}"
+  />
+  <input
+    type="text"
+    name="content"
+    id="choice{{ forloop.counter }}"
+    value="{{ choice.id }}"
+  />
+  <!-- This should be a dropdown list but I am not too sure how to link that to the Category list -->
+  <input type="text" name="category" value="{{ category.id }}" />
+  {% endfor %}
+  <input type="submit" value="Create" />
+</form>

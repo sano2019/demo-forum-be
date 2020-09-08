@@ -1,0 +1,10 @@
+{% if posts and categories %} {% for category in categories%}
+<p>{{category.title}}</p>
+<ul>
+  {% for post in posts%}
+  <li><a href="/forum/{{ post.id }}/">{{post.title</a></li>
+  {%endfor%}
+</ul>
+{%endfor%} {%else%}
+<p>No posts are available.</p>
+{%endif%}
